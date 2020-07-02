@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Web Whatsapp Dark Mode",
+    "description": "Automatic enables integrated dark mode",
+    "version": "0.0.1",
+    "author": "Arnout Pullen",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.web.whatsapp.com/*"
+            ],
+            "js": [
+                "sites/whatsapp/web.whatsapp.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "assets/icons/icon-16x16.png",
+        "32": "assets/icons/icon-32x32.png",
+        "48": "assets/icons/icon-48x48.png",
+        "128": "assets/icons/icon-128x128.png"
+    }
+}
